@@ -10,7 +10,7 @@ func main() {
 	hostname, _ := os.Hostname()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "<h1>Hello PSS.sk! %s</h1>\n", hostname)
+		fmt.Fprintf(w, "<h1><center>Hello PSS.sk! %s</center></h1>\n", hostname)
 	})
 
 	fmt.Println("Listen on 0.0.0.0:8000, see: http://127.0.0.1:8000")
