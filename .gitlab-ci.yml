@@ -1,3 +1,6 @@
 include:
   - project: 'clients-public/pss/pss-gitlab-ci'
     file: '/simple_image.gitlab-ci.yml'
+
+variables:
+  FILE: apps/dev/hello_pss/hello_pss.image.values.yml
