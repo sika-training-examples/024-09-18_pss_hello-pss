@@ -3,4 +3,4 @@ include:
     file: '/simple_image.gitlab-ci.yml'
 
 variables:
-  FILE: apps/dev/hello_pss/hello_pss.image.values.yml
+  FILE: apps%2Fdev%2Fhello_pss%2Fhello_pss.image.values.yml
