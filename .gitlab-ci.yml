@@ -1,0 +1,3 @@
+include:
+  - project: 'clients-public/pss/pss-gitlab-ci'
+    file: '/simple_image.gitlab-ci.yml'
