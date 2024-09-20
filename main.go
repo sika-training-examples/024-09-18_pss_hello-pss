@@ -21,8 +21,14 @@ func main() {
 		suffix = " " + suffixEnv
 	}
 
+	fontColor := "black"
+	fontColorEnv := os.Getenv("COLOR")
+	if fontColorEnv != "" {
+		fontColor = fontColorEnv
+	}
+
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "<h1><center>%sHello PSS.sk!%s %s</center></h1>\n", prefix, suffix, hostname)
+		fmt.Fprintf(w, "<h1 style=\"color: %s\"><center>%sHello PSS.sk!%s %s</center></h1>\n", fontColor, prefix, suffix, hostname)
 	})
 
 	fmt.Println("Listen on 0.0.0.0:8000, see: http://127.0.0.1:8000")
